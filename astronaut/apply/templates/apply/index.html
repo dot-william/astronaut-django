@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Are you ready to be an astronaut!?</title>
+    </head>
+    <body>
+        <form role="form" action="{% url 'submit-form' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            Name: <input type="text" name="name"><br>
+            Height: <input type="text" name="height"><br>
+            <input type="submit" value="Submit">
+          </form>
+          
+    </body>
+</html>
